@@ -562,7 +562,7 @@ body {
   display: flex;
   width: 900px;
   max-width: 75%;
-  height: 100%;
+  min-height: 100%;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -573,7 +573,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  height: 300px;
 }
 .intro .image img {
   width: 100%;
@@ -583,11 +583,14 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 400px;
-  height: 400px;
+  height: 500px;
 }
 .intro .content h1 {
   font-size: 2rem;
   line-height: 30px;
+}
+.intro .content p {
+  font-size: 1.2rem;
 }
 .intro .content .timer {
   display: flex;
@@ -595,7 +598,8 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 350px;
-  height: 150px;
+  height: 100px;
+  padding: 30px 0;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
@@ -615,10 +619,11 @@ body {
   min-width: 50px;
   height: 50px;
   border-radius: 5px;
-  border: 1px solid #fff;
   font-size: 1.8rem;
   padding: 5px;
   text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
 }
 .intro .register_btn {
   margin-top: 20px;
@@ -733,19 +738,23 @@ body {
 }
 
 @media (max-width: 900px) {
-  .intro--banner {
+  .intro .content {
+    text-align: center;
+    align-items: center;
+  }
+  .intro .content--banner {
     height: 380px;
   }
-  .intro--banner h1 {
+  .intro .content--banner h1 {
     font-size: 55px;
   }
-  .intro--banner img {
+  .intro .content--banner img {
     width: 430px;
   }
-  .intro--options > a {
+  .intro .content--options > a {
     margin-right: 30px;
   }
-  .intro--options > a:last-child {
+  .intro .content--options > a:last-child {
     margin-right: 0;
   }
 }
