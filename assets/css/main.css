@@ -565,30 +565,79 @@ body {
   height: 100%;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 .intro .image {
-  width: 500px;
+  width: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+.intro .image img {
+  width: 100%;
+}
+.intro .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+  height: 400px;
+}
+.intro .content h1 {
+  font-size: 2rem;
+  line-height: 30px;
 }
 .intro .content .timer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 400px;
+  width: 350px;
   height: 150px;
-  border: 1px solid #fff;
   border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.intro .content .timer p {
+  font-size: 2rem;
+  line-height: 10px;
 }
 .intro .content .timer .time {
   display: flex;
   gap: 1rem;
 }
 .intro .content .timer .time .time-box {
-  width: 50px;
+  min-width: 50px;
   height: 50px;
   border-radius: 5px;
   border: 1px solid #fff;
+  font-size: 1.8rem;
+  padding: 5px;
+  text-align: center;
+}
+.intro .register_btn {
+  margin-top: 20px;
+  border: 1px solid aqua;
+  background: transparent;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+.intro .register_btn:hover {
+  background: aqua;
+}
+.intro .register_btn:hover a {
+  color: #000;
+}
+.intro .register_btn a {
+  text-decoration: none;
+  color: #fff;
 }
 @media (max-width: 1180px) {
   .intro {

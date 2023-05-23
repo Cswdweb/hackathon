@@ -38,28 +38,31 @@
         <nav class="l-side-nav">
           <ul class="side-nav">
             <li class="is-active"><span>Home</span></li>
-            <li><span>Works</span></li>
-            <li><span>About</span></li>
-            <li><span>Contact</span></li>
-            <li><span>Hire us</span></li>
+            <li><span>Timeline</span></li>
+            <li><span>Theam</span></li>
+            <li><span>Team</span></li>
+            <li><span></span></li>
           </ul>
         </nav>
         <ul class="l-main-content main-content">
           <li class="l-section section section--is-active">
             <div class="intro">
-              <img class="image" src="assets/img/hero.png" alt="">
+              <div class="image">
+                <img src="assets/img/hero.png" alt="">
+              </div>
               <div class="content">
                 <h1>Lorem ipsum dolor sit amet.</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quis?</p>
                 <div class="timer">
                   <p>Register Now</p>
                   <div class="time">
-                    <div class="time-box days"></div>
-                    <div class="time-box hour"></div>
-                    <div class="time-box minutes"></div>
-                    <div class="time-box seconds"></div>
+                    <div class="time-box" id="days"></div>
+                    <div class="time-box" id="hours"></div>
+                    <div class="time-box" id="minutes"></div>
+                    <div class="time-box" id="seconds"></div>
                   </div>
                 </div>
+                <button class="register_btn"><a href="http://">Register Now</a></button>
               </div>
             </div>
           </li>
@@ -89,9 +92,9 @@
   </div>
   <ul class="outer-nav">
     <li class="is-active">Home</li>
-    <li>Works</li>
-    <li>About</li>
-    <li>Contact</li>
+    <li>Timeline</li>
+    <li>Theam</li>
+    <li>Team</li>
     <li>Hire us</li>
   </ul>
 </div>
@@ -99,5 +102,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
+<script src="assets/js/timer.js"></script>
 </body>
 </html>
