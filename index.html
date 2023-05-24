@@ -1,108 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Global</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="HTML5 website template">
-  <meta name="keywords" content="global, template, html, sass, jquery">
-  <meta name="author" content="Bucky Maler">
-  <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-
-<!-- notification for small viewports and landscape oriented smartphones -->
-<div class="device-notification">
-  <a class="device-notification--logo" href="#0">
-    <img src="assets/img/logo.png" alt="Global">
-    <p>Global</p>
-  </a>
-  <p class="device-notification--message">Hackathon</p>
-</div>
-
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-          <a class="header--logo" href="#0">
-            <img src="assets/img/logo.png" alt="Global">
-            <p>Global</p>
-          </a>
-          <button class="header--cta cta">Register Now</button>
-          <div class="header--nav-toggle">
-            <span></span>
-          </div>
-        </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>Home</span></li>
-            <li><span>Timeline</span></li>
-            <li><span>Theme</span></li>
-            <li><span>Team</span></li>
-            <li><span></span></li>
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active">
-            <div class="intro">
-              <div class="image">
-                <img src="assets/img/hero.png" alt="">
-              </div>
-              <div class="content">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quis?</p>
-                <div class="timer">
-                  <p>Register Now</p>
-                  <div class="time">
-                    <div class="time-box" id="days"></div>
-                    <div class="time-box" id="hours"></div>
-                    <div class="time-box" id="minutes"></div>
-                    <div class="time-box" id="seconds"></div>
-                  </div>
-                </div>
-                <button class="register_btn"><a href="http://">Register Now</a></button>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="work">
-              <h2>Time Line</h2>
-              <img src="assets/img/tm.png">
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="about">
-              <h1>Theme</h1>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="contact">
-              <h1>team</h1>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="hire">
-              <h2>student team</h2>
-            </div>
-          </li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeHacks | CSWD</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="" />
       </div>
-    </div>
-  </div>
-  <ul class="outer-nav">
-    <li class="is-active">Home</li>
-    <li>Timeline</li>
-    <li>Theme</li>
-    <li>Team</li>
-    <li>Hire us</li>
-  </ul>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="assets/js/functions-min.js"></script>
-<script src="assets/js/timer.js"></script>
-</body>
+      <ul class="nav-links">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#theam">Theme</a></li>
+        <li><a href="#">Team</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <section id="header">
+      <img class="header-img" src="assets/t.webp" alt="" />
+      <div class="content">
+        <h1>Code<span>Hacks</span></h1>
+        <p class="time-text">June 2, 2023 - June 3, 2023</p>
+        <p class="tag-text">
+          <span>Code. Collaborate. Create.</span> Revolutionize: The Hackathon
+          Experience Begins!
+        </p>
+        <button class="register-btn"><a href="/">Register Now</a></button>
+      </div>
+    </section>
+    <section id="timeline">
+      <h1 class="timeline-head">Timeline</h1>
+      <ul class="timeline-container">
+        <li style="--accent-color: #41516c">
+          <div class="date">June 2, 2023 [9:30 am - 9:35 am]</div>
+          <div class="title">Registration and Check-In</div>
+          <div class="descr">
+            ● Participants arrive at the venue and complete the registration
+            process. <br />
+            ● Provide participants with event materials, including
+            identification badges, event schedules, and any necessary
+            instructions.
+          </div>
+        </li>
+        <li style="--accent-color: #fbca3e">
+          <div class="date">June 2, 2023 [9:35 am - 11:00 am ]</div>
+          <div class="title">Opening Ceremony</div>
+          <div class="descr">
+            ● Welcome address by the event organizer.<br />
+            ● Introduction of guest speakers and their areas of expertise.<br />
+            ● Inspiring keynote speech highlighting the significance of
+            collaboration, innovation, and teamwork.
+          </div>
+        </li>
+        <li style="--accent-color: #e24a68">
+          <div class="date">June 2, 2023 [10:00 am – 10:15 pm]</div>
+          <div class="title">Team Formation</div>
+          <div class="descr">
+            ● Participants form teams based on their interests and skillsets.<br />
+            ● Encourage diverse team compositions to foster interdisciplinary
+            collaboration.<br />
+            ● Facilitate team building activities to encourage participants to
+            get to know each other and establish effective communication.
+          </div>
+        </li>
+        <li style="--accent-color: #1b5f8c">
+          <div class="date">June 2, 2023 [10:15 am – 10:30 am ]</div>
+          <div class="title">Hackathon Kick-off</div>
+          <div class="descr">
+            ● Present the problem statements or themes for the Hackathon. <br />
+            ● Explain the rules, guidelines, and any constraints participants
+            should consider. <br />
+            ● Provide access to necessary tools, technologies, and resources for
+            development.
+          </div>
+        </li>
+        <li style="--accent-color: #4cadad">
+          <div class="date">June 2, 2023 [10:30 am] - [10:45 am]</div>
+          <div class="title">Idea Generation and Planning</div>
+          <div class="descr">
+            ● Teams brainstorm ideas and select a project to work on. <br />
+            ● Encourage teams to identify the scope, goals, and deliverables of
+            their projects. <br />
+            ● Assist teams in creating project plans, including task
+            distribution and time management.
+          </div>
+        </li>
+        <li style="--accent-color: #f79327">
+          <div class="date">June 2, 2023 [10:45 am] - [12:30 am]</div>
+          <div class="title">Development Phase</div>
+          <div class="descr">
+            ● Participants start working on their projects. <br />
+            ● Provide mentors and technical experts to support teams with
+            guidance and troubleshooting. <br />
+            ● Foster a collaborative atmosphere where teams can share ideas and
+            seek feedback from peers and mentors.
+          </div>
+        </li>
+        <li style="--accent-color: #b70404">
+          <div class="date">June 2, 2023 [12:30 pm to 1:30 pm ]</div>
+          <div class="title">Lunch Break</div>
+          <div class="descr">
+            ● Provide a designated time for participants to refresh, network,
+            and enjoy a meal.<br />
+            ● Arrange for catering or facilitate access to nearby food options.
+          </div>
+        </li>
+        <li style="--accent-color: #27374d">
+          <div class="date">June 2, 2023 [1:30 pm] - [8:00 pm]</div>
+          <div class="title">Continued Development</div>
+          <div class="descr">
+            ● Teams resume their work, focusing on implementation, testing, and
+            refinement of their projects. <br />
+            ● Ensure mentors and technical experts are available for ongoing
+            assistance.
+          </div>
+        </li>
+        <li style="--accent-color: #47a992">
+          <div class="date">June 2, 2023</div>
+          <div class="title">Title 9</div>
+          <div class="descr">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.
+          </div>
+        </li>
+        <li style="--accent-color: #e57c23">
+          <div class="date">June 2, 2023</div>
+          <div class="title">Title 10</div>
+          <div class="descr">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.
+          </div>
+        </li>
+        <li style="--accent-color: #a459d1">
+          <div class="date">June 3, 2023</div>
+          <div class="title">Title 11</div>
+          <div class="descr">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.
+          </div>
+        </li>
+        <li style="--accent-color: #1b9c85">
+          <div class="date">June 3, 2023</div>
+          <div class="title">Title 12</div>
+          <div class="descr">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.
+          </div>
+        </li>
+        <li style="--accent-color: #5c469c">
+          <div class="date">June 3, 2023</div>
+          <div class="title">Title 13</div>
+          <div class="descr">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.
+          </div>
+        </li>
+        <li style="--accent-color: #b04759">
+          <div class="date">June 3, 2023</div>
+          <div class="title">Title 14</div>
+          <div class="descr">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.
+          </div>
+        </li>
+        <li style="--accent-color: #088395">
+          <div class="date">June 3, 2023</div>
+          <div class="title">Title 15</div>
+          <div class="descr">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.
+          </div>
+        </li>
+        <li style="--accent-color: #f45050">
+          <div class="date">June 3, 2023</div>
+          <div class="title">Title 16</div>
+          <div class="descr">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="theam">
+      <h2 class="theam_head">Our Services</h2>
+      <div class="row">
+        <div class="column">
+          <div class="theam-card">
+            <div class="icon-wrapper">
+              <i class="fa-sharp fa-solid fa-laptop-mobile"></i>
+            </div>
+            <h3 class="theam-head">Education Technology (EdTech)</h3>
+            <p class="theam-details">
+              Focus on developing innovative solutions to improve the learning
+              experience for students or teachers. <br />
+              <b>Examples:</b> Online learning platforms, virtual classrooms,
+              educational games, automated grading systems, tutoring apps.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="theam-card">
+            <div class="icon-wrapper">
+              <i class="fas fa-hammer"></i>
+            </div>
+            <h3 class="theam-head">
+              Sustainability and Environmental Conservation
+            </h3>
+            <p class="theam-details">
+              Encourage participants to create projects that address
+              environmental issues and promote sustainability.<br />
+              <b>Examples:</b>
+              Energy-efficient solutions, waste management systems, recycling
+              apps, smart irrigation systems, carbon footprint calculators.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="theam-card">
+            <div class="icon-wrapper">
+              <i class="fas fa-hammer"></i>
+            </div>
+            <h3 class="theam-head">Health and Wellness</h3>
+            <p class="theam-details">
+              Explore projects that promote physical and mental well-being.<br />
+              <b>Examples: </b>Fitness tracking apps, mental health support
+              platforms, healthcare management systems, personalized diet
+              planners, stress management tools.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="theam-card">
+            <div class="icon-wrapper">
+              <i class="fas fa-hammer"></i>
+            </div>
+            <h3 class="theam-head">Smart Home Automation</h3>
+            <p class="theam-details">
+              Encourage participants to develop projects that automate tasks and
+              enhance the efficiency and convenience of daily home activities. •
+              <br />
+              <b>Examples:</b> Voice-controlled home automation systems, energy
+              monitoring systems, smart security systems, automated lighting and
+              temperature control, smart appliance control.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="theam-card">
+            <div class="icon-wrapper">
+              <i class="fas fa-hammer"></i>
+            </div>
+            <h3 class="theam-head">E-commerce Solutions</h3>
+            <p class="theam-details">
+              Focus on developing projects related to online shopping and
+              improving the e-commerce experience. <br />
+              <b>Examples:</b> Online marketplace platforms, personalized
+              recommendation systems, secure payment gateways, inventory
+              management systems, order tracking apps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
 </html>
