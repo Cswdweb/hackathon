@@ -29,7 +29,7 @@ nav {
 }
 
 .logo img {
-  width: 100px;
+  width: 70px;
 }
 
 .nav-links {
@@ -235,7 +235,7 @@ nav {
     flex-direction: column;
     justify-content: flex-end;
   }
-  .content h1{
+  .content h1 {
     font-size: 2.7rem;
   }
 }
@@ -421,7 +421,7 @@ nav {
 }
 
 #theam {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -434,7 +434,7 @@ nav {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center
+  justify-content: center;
 }
 .column {
   width: 100%;
@@ -508,4 +508,101 @@ nav {
     flex: 0 0 33.33%;
     max-width: 33.33%;
   }
+}
+
+/* Team section  */
+#team {
+  background: var(--bgColor);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  padding: 20px;
+}
+.faculty-coordinators {
+  text-align: center;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.faculty-coordinators h1{
+  font-size: 2.4rem;
+}
+.team-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
+.team-container .team-card {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+.team-container .team-card .team-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #ff6f00;
+}
+.team-img img {
+  height: 100%;
+  width: 100%;
+}
+.team-card .team-text {
+  text-align: center;
+  width: 100%;
+}
+.team-card .team-text h1 {
+  font-size: 1.7rem;
+  color: #ff6f00;
+}
+.team-card .team-text h2 {
+  font-size: 1.2rem;
+  color: #575a7b;
+}
+.links {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  transform: translateY(50px);
+  transition: 500ms ease-in-out;
+}
+.links a {
+  color: #000;
+  font-size: 1.6rem;
+}
+.team-card:hover .links {
+  transform: translateY(0);
+}
+#footer{
+  min-height: 10vh;
+  display: grid;
+  place-items: center;
+}
+#footer h1{
+  font-size: 1.4rem;
+}
+#footer h1 a{
+  text-decoration: none;
+  color: #333;
+}
+#footer h1 a:hover{
+  color: #ff6f00;
 }
