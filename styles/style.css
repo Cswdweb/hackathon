@@ -163,6 +163,12 @@ nav {
   color: #890789;
   font-weight: 600;
 }
+.btn{
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+  gap: 1.6rem;
+}
 .content .register-btn {
   width: 200px;
   height: 50px;
@@ -237,6 +243,14 @@ nav {
   }
   .content h1 {
     font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .header-img {
+    width: 200px;
+  }
+  .content h1 {
+    font-size: 2rem;
   }
 }
 /* Header End  */
@@ -605,6 +619,7 @@ nav {
   min-height: 10vh;
   display: grid;
   place-items: center;
+  text-align: center;
 }
 #footer h1{
   font-size: 1.4rem;
@@ -616,3 +631,115 @@ nav {
 #footer h1 a:hover{
   color: #ff6f00;
 }
+
+#pptSubmit{
+  min-height: 50vh;
+  width: 100%;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.countdown{
+  width: 500px;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 2px solid #ff6f00;
+  transition: 200ms ease-in-out;
+}
+
+.countdown h1{
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: #ff6f00;
+}
+.countdown:hover{
+  background: #ff6f00;
+  color: #fff;
+}
+.countdown:hover h1{
+  color: #fff;
+}
+.timerBox{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.timerBox div{
+  width: 70px;
+  height: 70px;
+  font-size: 2rem;
+  font-weight: 500;
+  border: 2px solid #ff6f00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.countdown:hover .timerBox div{
+  border: 2px solid #fff;
+}
+#pptSubmit button{
+  --color: #ff6f00;
+ padding: 0.8em 1.7em;
+ background-color: transparent;
+ border-radius: .3em;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ transition: .5s;
+ font-weight: 400;
+ font-size: 17px;
+ border: 1px solid;
+ font-family: inherit;
+ text-transform: uppercase;
+ color: var(--color);
+ z-index: 1;
+}
+
+#pptSubmit button::before, #pptSubmit button::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+ }
+ #pptSubmit button::before {
+  top: -1em;
+  left: -1em;
+ }
+ 
+ #pptSubmit button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+ }
+ 
+ #pptSubmit button:hover::before, #pptSubmit button:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ #pptSubmit button:active {
+  filter: brightness(.8);
+ }
+ #pptSubmit button a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: 700;
+  color: #ff6f00;
+ }
+ #pptSubmit button:hover {
+  color: #ffff;
+ }
+ 
