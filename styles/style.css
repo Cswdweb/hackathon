@@ -166,7 +166,7 @@ nav {
 .btn{
   display: flex;
   flex-wrap: wrap ;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1.6rem;
 }
 .content .register-btn {
@@ -563,10 +563,10 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1.4rem;
+  gap: 3rem;
 }
 .team-container .team-card {
-  width: 300px;
+  width: 400px;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -743,3 +743,14 @@ nav {
   color: #ffff;
  }
  
+ #gallery{
+  min-height: 70vh;
+  text-align: center;
+  padding: 40px 0;
+ }
+ #gallery h1{
+  font-size: 2.5rem;
+ }
+ .gallery_container{
+
+ }
